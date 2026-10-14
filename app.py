@@ -17,11 +17,12 @@ st.write(
 
 st.sidebar.header("Investment assumptions")
 
-starting_investment = st.sidebar.number_input(
+starting = st.number_input(
     "Starting investment ($)",
     min_value=0.0,
     value=5000.0,
-    step=500.0
+    step=500.0,
+    key="starting_investment",
 )
 
 monthly_contribution = st.sidebar.number_input(
